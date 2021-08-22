@@ -1,0 +1,117 @@
+@import "./global.scss";
+
+.App {
+  position: relative;
+
+  .menu {
+    margin-top: 8vh;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $primaryColor;
+  }
+
+  .content {
+    margin-top: 8vh;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $primaryColor;
+
+    .players-container {
+      margin-top: 20px;
+      display: flex;
+      background-color: $accentColor;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px $boxShadow;
+
+      @include mobile {
+        flex-direction: column;
+      }
+    }
+  }
+
+  .shade {
+    position: absolute;
+    height: 92vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.466);
+    z-index: 5;
+  }
+
+  .modal {
+    height: auto;
+    width: 30vw;
+    background-color: $primaryColor;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 12px 0px;
+    z-index: 100;
+
+    @include mobile {
+      width: 90vw;
+    }
+
+    .title {
+      color: $navbarColor;
+      font-size: 48px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    p {
+      text-align: center;
+      color: $textColor;
+      background-color: $accentColor;
+      padding-bottom: 2px;
+      font-size: 28px;
+      font-weight: 600;
+      margin: 10px 0px;
+    }
+
+    button {
+      font-size: 24px;
+      margin: 6px auto;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      padding: 5px 12px;
+      cursor: pointer;
+      color: $textColor;
+      transition: all linear 0.2s;
+
+      &:hover {
+        background-color: $accentColor;
+      }
+    }
+  }
+  .cpu-turn {
+    margin-top: 150px;
+    height: 477px;
+    width: 477px;
+    background-color: transparent;
+    z-index: 2;
+    position: absolute;
+
+    @include mobile {
+      margin-top: 200px;
+      height: 90vw;
+      width: 90vw;
+    }
+  }
+
+  .round {
+    font-size: 24px;
+    margin-top: 15px;
+    color: $textColor;
+    font-weight: 600;
+  }
+}

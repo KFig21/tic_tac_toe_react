@@ -1,0 +1,12 @@
+@import "../../global.scss";
+
+.message-container {
+  margin-top: 20px;
+  padding: 5px 10px;
+  font-size: 24px;
+  color: $textColor;
+  background-color: $accentColor;
+  box-shadow: 2px 2px 5px $boxShadow;
+  border-radius: 5px;
+  z-index: 10;
+}

@@ -1,0 +1,12 @@
+$navbarColor: #1878c7;
+$primaryColor: #eeeeee;
+$accentColor: #ffffff;
+$textColor: #8d8e8f;
+$boxShadow: rgba(92, 93, 94, 0.507);
+$width: 608px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}

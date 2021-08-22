@@ -1,0 +1,31 @@
+@import "../../../global.scss";
+
+.position-container {
+  min-width: 155px;
+  height: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $primaryColor;
+  cursor: pointer;
+  color: white;
+  text-shadow: 3px 3px 10px rgba(66, 66, 66, 0.3),
+    14px 14px 10px rgba(66, 66, 66, 0.3);
+  background-color: white;
+  font-family: "Fredoka One", cursive;
+  font-size: 135px;
+
+  &:hover {
+    background-color: $primaryColor;
+  }
+
+  @include mobile {
+    min-width: 28vw;
+    height: 28vw;
+    font-size: 95px;
+
+    &:hover {
+      background-color: white;
+    }
+  }
+}

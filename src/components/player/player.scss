@@ -1,0 +1,51 @@
+@import "../../global.scss";
+
+.player-container {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $textColor;
+  margin: 0px 30px;
+  height: 48px;
+  max-width: 400px;
+  padding: 0px 10px;
+
+  span {
+    justify-content: center;
+    font-size: 24px;
+    vertical-align: middle;
+  }
+
+  .player-name {
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    max-width: 120px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+  }
+  .marker {
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    max-width: 36px;
+    text-align: center;
+    margin-right: 20px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .score {
+    font-size: 24px;
+    background-color: $navbarColor;
+    color: $accentColor;
+    border-radius: 3px;
+    height: 36px;
+    width: 36px;
+    text-align: center;
+  }
+}

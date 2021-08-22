@@ -1,0 +1,9 @@
+@import "../../global.scss";
+
+.gameboard {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  box-shadow: 15px 15px 15px $boxShadow;
+}
