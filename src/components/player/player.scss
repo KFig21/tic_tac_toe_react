@@ -26,6 +26,7 @@
     text-align: center;
     cursor: pointer;
     outline: none;
+    padding-top: 2px;
   }
   .marker {
     font-size: 24px;
@@ -37,9 +38,13 @@
     margin-right: 20px;
     cursor: pointer;
     outline: none;
+    padding-top: 2px;
   }
 
   .score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 24px;
     background-color: $navbarColor;
     color: $accentColor;
@@ -47,5 +52,12 @@
     height: 36px;
     width: 36px;
     text-align: center;
+  }
+
+  .colon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
   }
 }

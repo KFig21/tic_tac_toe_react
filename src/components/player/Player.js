@@ -15,7 +15,7 @@ export default function Player({ player, setPlayerName, checkMarker }) {
         value={name}
         onChange={(e) => setPlayerName(e.target.value)}
       ></input>
-      <span>:</span>
+      <span className="colon">:</span>
       <input
         className="marker"
         type="text"
